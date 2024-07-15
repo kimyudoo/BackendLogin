@@ -5,7 +5,7 @@
 	</head>
 	<script>
 		var loginok = '<%=(String)session.getAttribute("loginok")%>';
-		if(loginok != "" || loginok != "null") {
+		if(loginok == "" || loginok == "null") {
 			alert("로그인이 되어 있지 않습니다.");
 			location.replace("/");
 		}
