@@ -31,6 +31,11 @@ public class LoginController {
 		return "index";
 	}
 	
+	@RequestMapping(value="/addbook", method=RequestMethod.GET)
+	public String addbook(HttpServletRequest request) {
+		return "addbook";
+	}
+	
 	@RequestMapping(value="/loginok", method=RequestMethod.GET)
 	public String loginok(HttpServletRequest request, HttpSession session) {
 		String userId = (String)session.getAttribute("loginok");
