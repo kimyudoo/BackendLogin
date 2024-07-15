@@ -3,6 +3,13 @@
 	<head>
 	    <meta charset="UTF-8">
 	</head>
+	<script>
+		var loginok = '<%=(String)session.getAttribute("loginok")%>';
+		if(loginok != "" || loginok != "null") {
+			alert("로그인이 되어 있지 않습니다.");
+			location.replace("/");
+		}
+	</script>
 	<body>
 		책 추가하기<br>
 		<form name="calc" method="GET" action="/insertbook">

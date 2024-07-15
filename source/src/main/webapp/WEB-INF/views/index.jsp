@@ -6,7 +6,6 @@
 	<script>
 		var loginok = '<%=(String)session.getAttribute("loginok")%>';
 		if(loginok != "" && loginok != "null") {
-			alert(loginok);
 			location.replace("/loginok");
 		}
 	</script>
