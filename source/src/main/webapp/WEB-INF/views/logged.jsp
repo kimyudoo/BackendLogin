@@ -19,7 +19,7 @@
 			<input type="hidden" name="userid" value="${current}">
 			<input type="submit" value="회원탈퇴"> 
 		</form>		
-		<input type="submit" value="책정보 입력" onClick="javascript:location.replace('addbook.html')"> 
+		<input type="submit" value="책정보 입력" onClick="javascript:location.replace('/addbook')"> 
 		<input type="submit" value="책 리스트 보기" onClick="javascript:location.replace('/list')"> 
 	</body>
 </html>
